@@ -20,10 +20,10 @@ export class RecipeService {
             [ new Ingredient('Mango', 4), new Ingredient('Pastry', 1) ]
         ),
         new Recipe(
-            'Apple Pie',
-            'A pie made of apples',
-            'https://cdn.pixabay.com/photo/2018/08/09/13/35/apple-pie-3594535_960_720.jpg',
-            [ new Ingredient('Apple', 3), new Ingredient('Pastry', 1) ]
+            'Regular Pie',
+            'A pieee?!',
+            'https://upload.wikimedia.org/wikipedia/commons/4/4b/Apple_pie.jpg',
+            [ new Ingredient('Pie', 1), new Ingredient('Pastry', 100) ]
         ), 
     ];
 
