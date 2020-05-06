@@ -20,7 +20,7 @@ export class ShoppingListService {
         this.ingredientsChanged.next(this.getIngredients());
     }
 
-    // get the recipes ingredients
+    // add ingredients to list
     assignRecipeIngredients(ingredients: Ingredient[]) {
         this.ingredients.push(...ingredients);
         this.ingredientsChanged.next(this.getIngredients());
@@ -28,6 +28,11 @@ export class ShoppingListService {
 
     updateIngredient(index: number, item: Ingredient) {
         this.ingredients[index] = item;
+        this.ingredientsChanged.next(this.getIngredients());
+    }
+
+    removeIngredient(index: number) {
+        this.ingredients.splice(index, 1);
         this.ingredientsChanged.next(this.getIngredients());
     }
 }
