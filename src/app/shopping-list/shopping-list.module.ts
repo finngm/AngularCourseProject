@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ShoppingListRoutingModule } from './shopping-list-routing.module';
+import { LoggingService } from '../logging.service';
 
 @NgModule({
     declarations: [
@@ -16,6 +17,7 @@ import { ShoppingListRoutingModule } from './shopping-list-routing.module';
         CommonModule,
         FormsModule,
         ShoppingListRoutingModule
-    ]
+    ],
+    // providers: [LoggingService]
 })
 export class ShoppingListModule {}
