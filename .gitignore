@@ -48,3 +48,8 @@ Thumbs.db
 
 # Environment variables
 /src/environments
+
+# Firebase
+firebase.json
+.firebaserc
+/.firebase
