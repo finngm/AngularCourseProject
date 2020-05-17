@@ -6,7 +6,15 @@ const appRoutes: Routes = [
     { 
         path: 'recipes', 
         loadChildren: () => import('./recipes/recipes.module').then(module => module.RecipesModule) 
-    } // old syntax instead of arrow function: './recipes/recipes.module#RecipesModule'
+    }, // old syntax instead of arrow function: './recipes/recipes.module#RecipesModule'
+    {
+        path: 'shopping-list',
+        loadChildren: () => import('./shopping-list/shopping-list.module').then(module => module.ShoppingListModule)
+    },
+    {
+        path: 'auth',
+        loadChildren: () => import('./auth/auth.module').then(module => module.AuthModule)
+    }
 ];
 
 @NgModule({
