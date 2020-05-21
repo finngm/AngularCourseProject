@@ -16,13 +16,12 @@ export class ShoppingListService {
         return this.ingredients[index];
     }
 
-    // add a new ingredient to recipe
     addIngredient(ingredient: Ingredient) {
         this.ingredients.push(ingredient);
         this.ingredientsChanged.next(this.getIngredients());
     }
 
-    // add ingredients to list
+    // add multiple ingredients
     assignRecipeIngredients(ingredients: Ingredient[]) {
         this.ingredients.push(...ingredients);
         this.ingredientsChanged.next(this.getIngredients());
